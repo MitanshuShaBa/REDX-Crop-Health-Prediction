@@ -1,10 +1,8 @@
-REDX_Crop_Health
-==============================
+# REDX_Crop_Health
 
 A short description of the project.
 
-Project Organization
-------------
+## Project Organization
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
@@ -51,7 +49,15 @@ Project Organization
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
+## Installation
 
---------
+1. Fork the project
+2. `git clone <forked_repo.git>` on your local device
+3. Create a new environment using `conda create -n <env_name> python=3.6 --yes`
+4. Activate your environment using `conda activate <env_name>`
+5. Install dvc and dvc-gdrive `conda install -c conda-forge dvc dvc-gdrive`
+6. Pull all the data from dvc data repository using `dvc pull`. You will have to authenticate with your Google Account for the first time.
+
+---
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
