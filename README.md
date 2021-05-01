@@ -1,6 +1,6 @@
 # REDX_Crop_Health
 
-A short description of the project.
+This project aims to help farmers by predicting their crop's health and thus preventing detremental effects to the farmer and the crops.
 
 ## Project Organization
 
