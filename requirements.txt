@@ -11,3 +11,8 @@ python-dotenv>=0.5.1
 dvc
 dvc-gdrive
 jupyterlab
+jupyterlab-git
+pandas
+numpy
+matplotlib
+seaborn
