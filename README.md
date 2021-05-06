@@ -58,6 +58,8 @@ This project aims to help farmers by predicting their crop's health and thus pre
 5. Install dvc and dvc-gdrive `conda install -c conda-forge dvc dvc-gdrive`
 6. Pull all the data from dvc data repository using `dvc pull`. You will have to authenticate with your Google Account for the first time.
 
+### `Windows Installation` error for tensorflow-gpu [View here](https://millansanchez.medium.com/install-tensorflow-2-with-gpu-support-dec-2020-for-windows-10-using-conda-e4c0d838d497)
+
 ---
 
 <p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
