@@ -17,3 +17,6 @@ numpy
 matplotlib
 seaborn
 opencv-python
+tensorflow
+streamlit
+Pillow
