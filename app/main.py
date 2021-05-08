@@ -36,14 +36,23 @@ if __name__ == '__main__':
     else:
         image_name = st.sidebar.selectbox("Sample Images", os.listdir("img"))
         img = Image.open(os.path.join("img", image_name))
-
+    
+    model_dir = "../models/"
+    model_name = st.sidebar.selectbox("Models", os.listdir(model_dir))
+        
     input_img = img.resize((128,128))
 
     st.title("Here is the image you've selected")
     resized_image = img.resize((250,250))
     st.image(resized_image)
 
-    model = load_model()
+    # Fallback for tf.__version__ < 2.3
+    # efficientnet was available from v2.3 
+    if model_name == "efficientnet_b4":
+        model_name = "inception_v3"
+    model_path = os.path.join(model_dir, model_name)
+
+    model = load_model(model_path)
     input_img=tf.data.Dataset.from_tensors([np.array(input_img)])
 
     prediction = model.predict(input_img)
