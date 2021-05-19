@@ -38,7 +38,8 @@ if __name__ == '__main__':
         img = Image.open(os.path.join("img", image_name))
     
     model_dir = "../models/"
-    model_name = st.sidebar.selectbox("Models", os.listdir(model_dir))
+    #model_name = st.sidebar.selectbox("Models", os.listdir(model_dir))
+    model_name = "inception_v3"
         
     input_img = img.resize((128,128))
 
@@ -48,7 +49,7 @@ if __name__ == '__main__':
 
     # Fallback for tf.__version__ < 2.3
     # efficientnet was available from v2.3 
-    if model_name == "efficientnet_b4":
+    if model_name == "efficientnet_b4" or model_name == "resnet50":
         model_name = "inception_v3"
     model_path = os.path.join(model_dir, model_name)
 
